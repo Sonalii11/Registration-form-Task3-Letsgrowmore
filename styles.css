@@ -1,0 +1,85 @@
+body{
+    background-image: url(bgimage.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h2{
+      font-family: Verdana, Geneva, Tahoma, sans-serif; 
+      font-size: 24px;         
+      font-style: normal; 
+      font-weight: bold; 
+      color: rgb(3, 3, 39);
+      text-align: center; 
+      text-decoration: underline
+    }
+  .headtitle{
+    background-color: #242324;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: rgb(251, 244, 235);
+    height: 50px;
+    width: 400px;
+    border-radius: 20px;
+  
+  }
+    
+    table{
+      font-family: verdana; 
+      color:rgb(0, 0, 0); 
+      font-size: 13px; 
+      font-style: normal;
+      border-collapse: collapse;
+      border: #242324 2px solid;
+    }
+    table.inner{
+      border: 10px
+    }
+    
+    input[type=text], input[type=email], input[type=number]{
+      width: 50%;
+      padding: 6px 12px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    
+    input[type=submit], input[type=reset]{
+      width: 15%;
+      padding: 8px 12px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+    button{
+      height: 40px;
+      width: 90px;
+      font-size: 15px;
+      color: beige;
+      border-radius: 20px;
+      background-color: #242324;
+      font-family: inherit;
+      border: none;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      box-shadow: 6px 6px 12px #c5c5c5,
+                  -6px -6px 12px #ffffff;
+}
+
+button::before {
+ content: '';
+ width: 0;
+ height: 3em;
+ border-radius: 20px;
+ position: absolute;
+ top: 0;
+ left: 0;
+ background-image: linear-gradient(to right, #4d1c56 0%, #250259 100%);
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+}
+
+button:hover::before {
+
+ width: 9em;
+}
+  
